@@ -167,7 +167,8 @@ Note the lines `interface=wlan0` and `bridge=br0`: these direct `hostapd` to add
 
 Note the line `country_code=GB`: it configures the computer to use the correct wireless frequencies in the United Kingdom. **Adapt this line** and specify the two-letter ISO code of your country. See [Wikipedia](https://en.wikipedia.org/wiki/ISO_3166-1) for a list of two-letter ISO 3166-1 country codes.
 
-To use the 5 GHz band, you can change the operations mode from `hw_mode=g` to `hw_mode=a`. Possible values for `hw_mode` are:
+To use the 5 GHz band, you can change the operations mode from `hw_mode=g` to `hw_mode=a`. Make sure to change the channel accordingly.
+Possible values for `hw_mode` are:
  - a = IEEE 802.11a (5 GHz) (Raspberry Pi 3B+ onwards)
  - b = IEEE 802.11b (2.4 GHz)
  - g = IEEE 802.11g (2.4 GHz)
